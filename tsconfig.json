@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "checkJs": false,
+        "sourceMap": true,
+        "module": "CommonJS",
+        "outDir": ".typescript_output",
+        "removeComments": true,
+        "noEmitOnError": true
+    }
+}

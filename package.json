@@ -1,0 +1,18 @@
+{
+  "name": "savemaster-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "System/requests.js",
+  "scripts": {
+    "test": "node System/requests.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "scloudjs": "^1.2.6"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.13"
+  }
+}
