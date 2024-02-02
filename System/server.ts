@@ -1,7 +1,7 @@
 const fs = require('fs');
 
 function new_user(username, userid, password){
-    var json = fs.readFileSync("/workspaces/SaveMaster-Server/System/server.json", "utf-8");
+    var json = fs.readFileSync("/home/runner/work/SaveMaster-Server/SaveMaster-Server/System/server.json", "utf-8");
     json = JSON.parse(json);
     var jsondata = json.user;
     var ondata = jsondata.filter(function (item) {
@@ -14,7 +14,7 @@ function new_user(username, userid, password){
             password: password
         }
         jsondata.push(newuserobj)
-        fs.writeFileSync("/workspaces/SaveMaster-Server/System/server.json", jsondata)
+        fs.writeFileSync("/home/runner/work/SaveMaster-Server/SaveMaster-Server/System/server.json", jsondata)
         return(newuserobj);
     }else{
         return(null) //アカウント登録済みの場合はここで止まる
@@ -22,7 +22,7 @@ function new_user(username, userid, password){
 }
 
 function loaduser(username){
-    var json = fs.readFileSync("/workspaces/SaveMaster-Server/System/server.json", "utf-8");
+    var json = fs.readFileSync("/home/runner/work/SaveMaster-Server/SaveMaster-Server/System/server.json", "utf-8");
     json = JSON.parse(json);
     var jsondata = json.user;
     var ondata = jsondata.filter(function (item) {
