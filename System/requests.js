@@ -62,7 +62,7 @@ const Sprocess = (data)=>{
 Scloudjs.setdatas("SaveMaster_Admin","savemaster0001","958914898",Sprocess);//いろいろデータを設定する
 
 function getdata(binary){
-    var json = fs.readFileSync("./systemconfig.json", "utf-8");
+    var json = fs.readFileSync("/home/runner/work/SaveMaster-Server/SaveMaster-Server/System/systemconfig.json", "utf-8");
     var json = JSON.parse(json);
     const textdata = json.textdata;
     let str = "";
@@ -79,7 +79,7 @@ function getdata(binary){
 }
 
 function getbite(text){
-    var json = fs.readFileSync("./systemconfig.json", "utf-8");
+    var json = fs.readFileSync("/home/runner/work/SaveMaster-Server/SaveMaster-Server/System/systemconfig.json", "utf-8");
     var json = JSON.parse(json);
     const textdata = json.textdata;
     let bite = "";
